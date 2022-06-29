@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>06_Transform_origin.html</title>
+    <style type="text/css">
+        .origin{width:160px; height:240px; border:1px solid black; float:left; margin:40px;}
+
+        /* 각각의 클래스에 맞게 회전축 지정 */
+        .ltop .rose{transform-origin:left top; transition:1s;}
+        .rtop .rose{transform-origin:right top; transition:1s;}
+        .lbottom .rose{transform-origin:left bottom; transition:1s;}
+        .rbottom .rose{transform-origin:right bottom; transition:1s;}
+
+        .rose:hover{transform:rotate(20deg);}
+        /* 여러 항목이 동시 선택되는 선택자에 hover를 적용하면 마우스 포인터가 올라가는 각각의 선택사항에 개별적으로 적용된다. 실제 마우스 포인터가 올라가는 .rose에 회전이 적용된다. */
+
+    </style>
+</head>
+<body>
+    <div class="origin">
+        <div class="ltop"><img src="images/rose.jpg" class="rose"></div>
+    </div>
+    <div class="origin">
+        <div class="rtop"><img src="images/rose.jpg" class="rose"></div>
+    </div>
+    <div class="origin">
+        <div class="lbottom"><img src="images/rose.jpg" class="rose"></div>
+    </div>
+    <div class="origin">
+        <div class="rbottom"><img src="images/rose.jpg" class="rose"></div>
+    </div>
+</body>
+</html>

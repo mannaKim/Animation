@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>17_AnimationKeyframeEx03.html</title>
+    <style type="text/css">
+        .box{position:relative; height:100px; width:100px; margin:60px;
+            animation-name:rotate; animation-iteration-count:infinite; 
+            animation-duration:3s; 
+            transform-origin:center;}
+        
+        @keyframes rotate{
+            from{background:red; transform:perspective(120px) rotateX(0deg) rotateY(0deg);}
+            50%{background:green; transform:perspective(120px) rotateX(-180deg) rotateY(0deg);}
+            to{background:blue; transform:perspective(120px) rotateX(-180deg) rotateY(-180deg);}
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
